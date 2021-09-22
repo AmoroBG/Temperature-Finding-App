@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Project</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.2rem;
+        }
+        
+        .header,
+        .footer {
+            background-color: tomato;
+            color: white;
+            text-align: center;
+            width: 100%;
+            padding: 1rem;
+        }
+        
+        .container {
+            width: 75%;
+            margin: auto;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        form {
+            background-color: thistle;
+            width: 35rem;
+            margin: auto;
+            padding: 5rem;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+        }
+        
+        input,
+        button {
+            margin: 0.5rem;
+            padding: 1rem;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+        }
+        
+        input:hover,
+        button:hover {
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: whitesmoke;
+        }
+        
+        button {
+            cursor: pointer;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.3;
+        }
+        
+        button:hover {
+            background-color: tomato;
+            color: whitesmoke;
+        }
+        
+        .footer {
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Weather Project - Simple Temperature Finding App</h1>
+    </header>
+    <section class="container">
+        <form action="/" method="POST">
+            <input type="text" name="locationName" placeholder="Location Name ...">
+            <input type="text" name="unit" placeholder="Unit of measurement ...">
+            <button type="submit">Check Temperature</button>
+        </form>
+    </section>
+    <section class="footer">
+        <p>Weather Project - Simple Temperature Finding App - &copy; September, 2021</p>
+    </section>
+</body>
+
+</html>

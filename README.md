@@ -1,0 +1,1 @@
+This Weather Project is a Simple Temperature Finding App. It is built in Node/ ExpressJS
